@@ -27,10 +27,12 @@ Route::get('/home', 'HomeController@index')->name('home');
 });
 
 Route::get('/setup1','FrontendController@stepOne')->name('step1');
+Route::get('/setup2','FrontendController@setup2');
 Route::get('/setup3','FrontendController@multiForm');
 
 Route::post('/step1','FrontendController@checkAge')->name('check.age');
 Route::post('/step2','FrontendController@greenCardConfirmation');
+Route::post('/adddetail','FrontendController@addClientDetail');
 Route::post('/step3','FrontendController@checkUsResident')->name('check.dor');
 Route::post('/step4','FrontendController@checkMariageDate')->name('check.dom');
 Route::post('/step5','FrontendController@checkCitizenshipDate')->name('check.doc');

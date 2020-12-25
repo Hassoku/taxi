@@ -484,6 +484,7 @@ class ComposerStaticInit07a071192de916d96ec44c31859f4271
     );
 
     public static $classMap = array (
+        'App\\ClientDetail' => __DIR__ . '/../..' . '/app/ClientDetail.php',
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
         'App\\Http\\Controllers\\Auth\\ConfirmPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ConfirmPasswordController.php',
@@ -508,11 +509,11 @@ class ComposerStaticInit07a071192de916d96ec44c31859f4271
         'App\\Providers\\BroadcastServiceProvider' => __DIR__ . '/../..' . '/app/Providers/BroadcastServiceProvider.php',
         'App\\Providers\\EventServiceProvider' => __DIR__ . '/../..' . '/app/Providers/EventServiceProvider.php',
         'App\\Providers\\RouteServiceProvider' => __DIR__ . '/../..' . '/app/Providers/RouteServiceProvider.php',
+        'App\\StepFour' => __DIR__ . '/../..' . '/app/StepFour.php',
+        'App\\StepOne' => __DIR__ . '/../..' . '/app/StepOne.php',
+        'App\\StepThree' => __DIR__ . '/../..' . '/app/StepThree.php',
+        'App\\StepTwo' => __DIR__ . '/../..' . '/app/StepTwo.php',
         'App\\User' => __DIR__ . '/../..' . '/app/User.php',
-        'App\\stepFour' => __DIR__ . '/../..' . '/app/stepFour.php',
-        'App\\stepOne' => __DIR__ . '/../..' . '/app/stepOne.php',
-        'App\\stepThree' => __DIR__ . '/../..' . '/app/stepThree.php',
-        'App\\stepTwo' => __DIR__ . '/../..' . '/app/stepTwo.php',
         'Asm89\\Stack\\Cors' => __DIR__ . '/..' . '/asm89/stack-cors/src/Asm89/Stack/Cors.php',
         'Asm89\\Stack\\CorsService' => __DIR__ . '/..' . '/asm89/stack-cors/src/Asm89/Stack/CorsService.php',
         'Attribute' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Attribute.php',

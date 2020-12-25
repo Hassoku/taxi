@@ -10,11 +10,24 @@ use App\StepOne;
 use App\StepTwo;
 use App\StepThree;
 use App\StepFour;
+use App\addClientDetail;
 class FrontendController extends Controller
 {
     public function index()
     {
         return view('setup');
+    }
+
+    public function setup2(){
+
+        return view('setup2');
+    }
+
+    public function addClientDetail(Request $request){
+
+     //
+
+
     }
 
     public function multiForm(){
@@ -27,7 +40,7 @@ class FrontendController extends Controller
     public function checkAge(Request $request){
 
     
-
+         
     	$dob = $request->dob;
         
     	$age = Carbon::parse($dob)->age;
@@ -51,7 +64,7 @@ class FrontendController extends Controller
     public function checkUsResident(Request $request)
     {
         $dor = $request->dor;
-        $us_green_card_holder = $request->green_card_holder;
+       
       
         $currentDate = Carbon::now();
         $to = Carbon::parse($dor);
@@ -61,6 +74,10 @@ class FrontendController extends Controller
 
         $diff_in_months = $to->diffInMonths($currentDate);
        
+
+       SteppThree::create([
+        'since_citizen' => $diff_in_months,
+       ]);
        
 
         return response()->json($diff_in_months);

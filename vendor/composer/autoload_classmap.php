@@ -6,6 +6,7 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'App\\ClientDetail' => $baseDir . '/app/ClientDetail.php',
     'App\\Console\\Kernel' => $baseDir . '/app/Console/Kernel.php',
     'App\\Exceptions\\Handler' => $baseDir . '/app/Exceptions/Handler.php',
     'App\\Http\\Controllers\\Auth\\ConfirmPasswordController' => $baseDir . '/app/Http/Controllers/Auth/ConfirmPasswordController.php',
@@ -30,11 +31,11 @@ return array(
     'App\\Providers\\BroadcastServiceProvider' => $baseDir . '/app/Providers/BroadcastServiceProvider.php',
     'App\\Providers\\EventServiceProvider' => $baseDir . '/app/Providers/EventServiceProvider.php',
     'App\\Providers\\RouteServiceProvider' => $baseDir . '/app/Providers/RouteServiceProvider.php',
+    'App\\StepFour' => $baseDir . '/app/StepFour.php',
+    'App\\StepOne' => $baseDir . '/app/StepOne.php',
+    'App\\StepThree' => $baseDir . '/app/StepThree.php',
+    'App\\StepTwo' => $baseDir . '/app/StepTwo.php',
     'App\\User' => $baseDir . '/app/User.php',
-    'App\\stepFour' => $baseDir . '/app/stepFour.php',
-    'App\\stepOne' => $baseDir . '/app/stepOne.php',
-    'App\\stepThree' => $baseDir . '/app/stepThree.php',
-    'App\\stepTwo' => $baseDir . '/app/stepTwo.php',
     'Asm89\\Stack\\Cors' => $vendorDir . '/asm89/stack-cors/src/Asm89/Stack/Cors.php',
     'Asm89\\Stack\\CorsService' => $vendorDir . '/asm89/stack-cors/src/Asm89/Stack/CorsService.php',
     'Attribute' => $vendorDir . '/symfony/polyfill-php80/Resources/stubs/Attribute.php',
